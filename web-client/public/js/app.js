@@ -1,5 +1,5 @@
 const IP = "192.168.43.228"; //ex_ip
-const socket = io.connect("ws://" + IP + ":8080", "pene");
+const socket = io.connect("ws://" + IP + ":8080");
 const form = document.getElementById("form");
 const input = document.getElementById("text-input");
 const username = window.localStorage.getItem("name");
