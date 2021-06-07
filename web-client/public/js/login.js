@@ -1,7 +1,13 @@
-const input = document.getElementById("input");
-const btn = document.getElementById("button");
-
-btn.onclick = () => {
-  window.localStorage.setItem("name", input.value);
-  window.location.replace("/");
-};
+const namebox = document.getElementById("name-box");
+namebox.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    const val = namebox.innerText;
+    e.preventDefault();
+    if (val !== "Your name") {
+      window.localStorage.setItem("name", val);
+      window.location.replace("/");
+      return;
+    }
+    alert("Enter your name");
+  }
+});

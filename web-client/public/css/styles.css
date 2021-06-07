@@ -6,8 +6,13 @@
   outline: none;
 }
 
-h1 {
-  font-size: 40px;
+#name-box {
+  width: 100%;
+  font-size: 100px;
+  outline: none;
+  margin: auto;
+  overflow-x: hidden;
+  text-align: center;
 }
 
 .msg-box {
